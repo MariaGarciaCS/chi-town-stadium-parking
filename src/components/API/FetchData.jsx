@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 
 export default function FetchData() {
-  const [events, setEvents] = useState();
+  const [events, setEvents] = useState([]);
   
   const tm_api = process.env.REACT_APP_API_KEY;
   const tm_url = `https://app.ticketmaster.com/discovery/v2/events?apikey=${tm_api}&venueId=KovZpZAF6tIA&locale=*`
@@ -11,7 +11,8 @@ export default function FetchData() {
   }, []);
 
   const getEvents = async () =>{
-    const response = await fetch(tm_url).then((res) => res.json());
+    const response = await fetch(tm_url)
+    .then((res) => res.json());
 
     setEvents(await response._embedded.events)
   }
