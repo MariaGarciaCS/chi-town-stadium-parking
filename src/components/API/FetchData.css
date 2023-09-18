@@ -1,0 +1,21 @@
+
+
+
+.event-container{
+    padding: 2rem 0;
+    text-align: center;
+    background-color: var(--chi-blue);
+    border-radius: 3rem;
+    border: black 3px solid;
+}
+
+.event-content{
+    padding: 2rem;
+}
+
+.event-content img{
+    border: solid var(--chi-red) 3px;
+    margin: 4rem;
+    max-height: 300px;
+
+}
