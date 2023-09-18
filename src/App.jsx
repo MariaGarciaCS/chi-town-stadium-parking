@@ -5,9 +5,11 @@ const App = () => {
     return (
       <div>
         <h1>Chi-Town Stadium Parking</h1>
-        <> 
-          <FetchData />
-        </>
+          <div className="column">
+            <FetchData />
+          </div>
+         
+        
       </div>
     )
   }
