@@ -11,7 +11,7 @@
     --chi-red: #FF0000;
     --soft-gray: #EBEBEB;
     --white: #FFF;
-    --box-shadow-light: 1px 1px 10px #000;
+    --box-shadow-light: 0px 1px 10px #000;
 }
 
 body{
