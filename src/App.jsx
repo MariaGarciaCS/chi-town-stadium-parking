@@ -5,8 +5,8 @@ import FetchData from './components/API/FetchData'
 const App = () => {
     return (
       <div>
-          <div className="column">
-            <Nav />
+        <Nav />
+          <div>
             <FetchData />
           </div>
          

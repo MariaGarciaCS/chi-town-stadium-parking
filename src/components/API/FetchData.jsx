@@ -18,6 +18,8 @@ export default function FetchData() {
       const response = await fetch(url)
         .then((res) => res.json())
 
+      console.log(response)
+
       result.push(...response._embedded.events)
 
       if(response._links.next){
@@ -35,17 +37,24 @@ export default function FetchData() {
 
   return (
     <>
-      <section id="all-events">
+      <section className="container__main" id="fetch-data">
+        {/* <div className="cta">
+          <button>Soldier Field</button>
+        </div> */}
         <div className="events-container">
+          <h2>Upcoming Events at Soldier Field</h2>
           {
             events.map((event, index) => {
               return <div key={index} className="event-container">
-                  <div className="event-content">
-                  <h2>{index + 1}. {event.name}</h2>
-                  <p>{event.dates.start.localDate}</p>
-                  <p>{event.dates.start.localTime}</p>
-                  <img src={event.images[1].url} alt="" />
-                  </div>
+                    <div className="event-info">
+                      <h3 className="event-title">{event.name}</h3>
+                      <p className="event-detail">{event.dates.start.localDate}</p>
+                      <p className="event-detail">{event.dates.start.localTime}</p>
+                    </div>
+                    <div className="event-img">    
+                        <img src={event.images[1].url} alt="" />
+                    </div>
+                  
                 </div>
             })
           }

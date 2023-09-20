@@ -9,6 +9,7 @@
 :root{
     --chi-blue: #B3DDF2;
     --chi-red: #FF0000;
+    --soft-gray: #EBEBEB;
     --white: #FFF;
     --box-shadow-light: 1px 1px 10px #000;
 }
@@ -18,5 +19,10 @@ body{
 }
 
 h1{
-  font-size: 2.5rem;  
+  font-size: 3rem;  
 }
+
+h2{
+    font-size: 2.5rem;  
+  }
+
