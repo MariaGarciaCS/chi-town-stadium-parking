@@ -1,11 +1,12 @@
 import React from 'react'
+import Nav from './components/Nav'
 import FetchData from './components/API/FetchData'
 
 const App = () => {
     return (
       <div>
-        <h1>Chi-Town Stadium Parking</h1>
           <div className="column">
+            <Nav />
             <FetchData />
           </div>
          
