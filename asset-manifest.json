@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/parking-buddy/static/css/main.b455d2aa.css",
+    "main.js": "/parking-buddy/static/js/main.3995ffd0.js",
+    "static/media/star.webp": "/parking-buddy/static/media/star.f4229b15981da277a3d9.webp",
+    "index.html": "/parking-buddy/index.html",
+    "main.b455d2aa.css.map": "/parking-buddy/static/css/main.b455d2aa.css.map",
+    "main.3995ffd0.js.map": "/parking-buddy/static/js/main.3995ffd0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b455d2aa.css",
+    "static/js/main.3995ffd0.js"
+  ]
+}
